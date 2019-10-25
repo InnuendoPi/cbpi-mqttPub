@@ -88,7 +88,6 @@ def mqtt_pub(api):
     """
     for i, value in cbpi.cache['kettle'].items():
         topic = 'MQTTDevice/kettle/' + str(i)
-        #cbpi.log_action("MQTTDeivce - kettle id %s" % i)
         data = {
             'id': i,
             'name': value.name,
