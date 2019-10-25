@@ -80,7 +80,7 @@ def initMQTT(app):
     app.cache["mqtt"].start()
 
 
-@cbpi.backgroundtask(key='mqtt_pub', interval=10)
+@cbpi.backgroundtask(key='mqtt_pub', interval=30)
 def mqtt_pub(api):
     """
     background process that reads all passive sensors in interval of 5 second
