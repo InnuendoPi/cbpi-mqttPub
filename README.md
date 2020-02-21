@@ -1,11 +1,16 @@
+# MQTT-Publisch für CraftBeerPi 3.0
+
+Plugin für CraftbeerPi zur Anbindung von MQTT Sensoren und Aktoren. MQTT-Pub ersetzt cbpi-mqttCompressor und ist für Verwendung von MQTTDevice2 erforderlich. Das Plugin basiert auf dem CraftbeerPi3 MQTT Basis Plugin.
+
+## Installation
+
+Das Plugin muss in das CraftbeerPi3 Verzeichnis ..\craftbeerpi3\modules\plugins\cbpi-mqttPub kopiert werden.
+
 # MQTT Plugin for CraftBeerPi 3.0
 
 This plugins allows to connect to an MQTT Message broker to receive sensor data and invoke actors.
 
-
-
 ## Installation
-
 
 ### Install missing python lib
 After installation please install python MQTT lib paho
@@ -33,7 +38,6 @@ The current version don't support username and password log for the mqtt broker
 
 # MQTT Test Client 
 A nice MQTT test client is mqtt.fx http://www.mqttfx.org/
-
 
 # Plugin config
 
