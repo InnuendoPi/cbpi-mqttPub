@@ -241,10 +241,7 @@ def mqtt_pub(api):
         topic = 'MQTTDevice/kettle/' + str(i)
         data = {
             'id': i,
-            'na': value.name,
             'he': cbpi.cache.get("actors").get(int(value.heater)).config["topic"],
-            'pl': cbpi.cache.get("actors").get(int(value.heater)).power,
-            'st': cbpi.cache.get("actors").get(int(value.heater)).state,
             'te': cbpi.get_sensor_value(value.sensor),
             'tt': value.target_temp
         }
